@@ -1,13 +1,6 @@
-import {
-  Header,
-  Footer,
-  Skills,
-  Works,
-  About,
-} from "./containers";
-import Navbar from "./components/Navbar/Navbar"
-import "./App.scss"
-
+import { Header, Footer, Skills, Works, About } from "./containers";
+import { Navbar } from "./components";
+import "./App.scss";
 
 function App() {
   return (

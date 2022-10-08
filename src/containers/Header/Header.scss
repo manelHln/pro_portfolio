@@ -66,10 +66,12 @@
     font-weight: 500;
     font-family: var(--font-family);
     margin: 1rem 0;
+    text-transform: capitalize;
 
     span {
       color: var(--secondary-color);
       font-weight: 700;
+      margin: 0 6px;
     }
 
     @media screen and (max-width: 390px) {
@@ -86,6 +88,7 @@
     span {
       color: var(--secondary-color);
       font-weight: 700;
+      margin: 0 6px;
     }
 
     @media screen and (max-width: 390px) {

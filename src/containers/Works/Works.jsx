@@ -5,8 +5,11 @@ import Wrapper from "../../wrapper/Wrapper";
 import MotionWrap from "../../wrapper/MotionWrap";
 import { works } from "../../constants/data";
 import { AiFillEye, AiFillGithub } from "../../constants/svgs";
+import {useTranslation} from "react-i18next"
 
 const Works = () => {
+  const {t} = useTranslation()
+
   const [filterWork, setFilterWork] = useState(works);
 
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -30,11 +33,11 @@ const Works = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative<span> Portfolio</span> Section
+        {t("worksTitle")}<span>{t("worksTitleSpan")}</span>{t("worksTitle2")}
       </h2>
 
       <div className="app__work-filter">
-        {["Web App", "Mobile App", "React js", "All"].map(
+        {["Web App", "Mobile App", "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -94,7 +97,7 @@ const Works = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>
-                {work.description}
+                {t(work.description)}
               </p>
 
               <div className="app__work-tag app__flex">

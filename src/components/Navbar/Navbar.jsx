@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { images } from "../../constants";
 import {HiX, HiMenuAlt4} from "react-icons/hi"
-import { HiOutlineClipboardList } from "../../constants/svgs";
 import { motion } from "framer-motion";
+import LangSelector from "../LangSelector";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const {t} = useTranslation()
 
   return (
     <nav className="navbar">
@@ -17,15 +19,16 @@ const Navbar = () => {
         {["home", "about", "works", "skills", "contact"].map((e) => (
           <li className="app__flex p-text" key={`link-${e}`}>
             <div />
-            <a href={`#${e}`}>{e}</a>
+            <a href={`#${e}`}>{t(e)}</a>
           </li>
         ))}
       </ul>
 
-      <a className="navbar-button" href="mailto:me@gmail.com">
+      {/* <a className="navbar-button" href="pro_cv.pdf" target="_blank">
         <HiOutlineClipboardList size={20} />
         <p className="p-text">Resume</p>
-      </a>
+      </a> */}
+      <LangSelector />
 
       <div className="mobile-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />

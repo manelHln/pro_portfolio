@@ -60,6 +60,8 @@
 
   span {
     color: var(--secondary-color);
+    margin: 0px 6px;
+    text-transform: capitalize;
   }
 
   @media screen and (min-width: 2000px) {
@@ -103,6 +105,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 
   padding: 1rem;
 
@@ -185,5 +188,41 @@
 
   .copyright {
     padding: 2rem;
+  }
+}
+
+
+.selector{
+  // position: fixed;
+  // bottom: 30px;
+  // left: 20px;
+  // z-index: 99;
+
+  border: none;
+  outline: none;
+  background-color: #d7e2f0;
+  color: var(--gray-color);
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.spinner{
+  border-color: var(--secondary-color) transparent;
+  animation: spin-anim 1.2s linear infinite;
+
+  svg{
+    color: var(--secondary-color);
+  }
+}
+
+@keyframes spin-anim {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }

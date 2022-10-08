@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import Wrapper from "../../wrapper/Wrapper";
 import MotionWrap from "../../wrapper/MotionWrap";
 import { skills, experiences } from "../../constants/data";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
-
+  const {t} = useTranslation()
   
   return (
     <>
-      <h2 className="head-text">Skills & <span>Experience</span></h2>
+      <h2 className="head-text">{t("skillsTitle")}<span>{t("skillsTitleSpan")}</span></h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">

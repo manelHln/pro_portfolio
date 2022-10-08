@@ -3,12 +3,14 @@ import "./Footer.scss";
 import { images } from "../../constants";
 import Wrapper from "../../wrapper/Wrapper";
 import MotionWrap from "../../wrapper/MotionWrap";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation()
   return (
     <>
       <h2 className="head-text">
-        Take a <span>coffe & chat</span> with me
+        {t("footerTitle1")} <span>{t("footerTitleSpan")}</span> {t("footerTitle2")}
       </h2>
 
       <div className="app__footer-cards">
@@ -25,11 +27,11 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <form className="app__footer-form app__flex">
+      <form action="https://formsubmit.co/emmanuelholonou.pro@gmail.com" method="POST" className="app__footer-form app__flex">
         <div className="app__flex">
           <input
             type="text"
-            placeholder="Your name"
+            placeholder={t("namePlaceh")}
             name="name"
             className="p-text"
           />
@@ -37,7 +39,7 @@ const Footer = () => {
         <div className="app__flex">
           <input
             type="text"
-            placeholder="Your email"
+            placeholder={t("emailPlaceh")}
             name="email"
             className="p-text"
           />
@@ -45,13 +47,13 @@ const Footer = () => {
 
         <div>
           <textarea
-            placeholder="Your message"
+            placeholder={t("messagePlaceh")}
             name="message"
             className="p-text"
           />
         </div>
         <button type="submit" className="p-text">
-          Send Message
+          {t("sendBtn")}
         </button>
       </form>
     </>

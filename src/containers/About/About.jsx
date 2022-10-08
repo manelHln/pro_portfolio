@@ -3,15 +3,17 @@ import { motion } from "framer-motion";
 import Wrapper from "../../wrapper/Wrapper";
 import MotionWrap from "../../wrapper/MotionWrap";
 import {abouts} from "../../constants/data"
+import {useTranslation} from "react-i18next"
 
 const About = () => {
+
+  const {t} = useTranslation()
+
 
   return (
     <>
       <h2 className="head-text">
-        I know that <span>good apps </span>
-        <br />
-        means <span>good business</span>
+        {t("aboutTitle")}<span>{t("aboutTitleSpan")}</span>{t("aboutTitle2")}
       </h2>
 
       <div className="profiles">
@@ -25,10 +27,10 @@ const About = () => {
           >
             <img src={about.imgUrl} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
+              {t(about.title)}
             </h2>
             <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
+              {t(about.description)}
             </p>
           </motion.div>
         ))}

@@ -2,27 +2,23 @@ import { images } from "../constants";
 
 const abouts = [
   {
-    title: "Full Stack developper",
-    description:
-      "I am a full stack web developper with the passion of making beautiful and functional web applications",
+    title: "aboutOneTitle",
+    description: "aboutOneDesc",
     imgUrl: images.about01,
   },
   {
-    title: "React Native developper",
-    description:
-      "I get your next billion dollar startup app running both on Android and Ios with the use of React Native.",
+    title: "aboutTwoTitle",
+    description: "aboutTwoDesc",
     imgUrl: images.about02,
   },
   {
-    title: "Wordpress developper",
-    description:
-      "Wordpress is the most popular CMS in the world used to create simple and complex web applications even without coding knowledge.",
+    title: "aboutThreeTitle",
+    description: "aboutThreeDesc",
     imgUrl: images.about03,
   },
   {
-    title: "Best SEO practices",
-    description:
-      "Getting your website online is great, but getting it high rated on search engines is critical for a better audience.",
+    title: "aboutFourTitle",
+    description: "aboutFourDesc",
     imgUrl: images.about04,
   },
 ];
@@ -102,6 +98,16 @@ const skills = [
     bgColor: "#edf2f8",
   },
   {
+    name: "expressJS",
+    icon: images.express,
+    bgColor: "#edf2f8",
+  },
+  {
+    name: "python",
+    icon: images.python,
+    bgColor: "#edf2f8",
+  },
+  {
     name: "postman",
     icon: images.postman,
     bgColor: "#edf2f8",
@@ -123,78 +129,59 @@ const skills = [
   },
 ];
 
-
 const works = [
   {
     name: "web app",
     title: "whatGpt3",
-    imgUrl: images.about01,
-    projectLink: "www.google.com",
+    imgUrl: images.whatgpt,
+    projectLink: "www.whatgpt.netlify.app",
     codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
-    tags: ["React js", "All"],
+    description: "whatgpt",
+    tags: ["Web App", "All"],
   },
   {
     name: "web app",
     title: "Car Repair",
-    imgUrl: images.about02,
+    imgUrl: images.autoRepair,
     projectLink: "www.google.com",
     codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
+    description: "carRepair",
     tags: ["Web App", "All"],
   },
   {
     name: "web app",
-    title: "Car Plus",
-    imgUrl: images.about02,
+    title: "Nft Marketplace",
+    imgUrl: images.nftMarketplace,
     projectLink: "www.google.com",
     codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
+    description: "nftMarket",
     tags: ["Web App", "All"],
   },
   {
     name: "web app",
-    title: "myShop",
-    imgUrl: images.about03,
+    title: "ProfNef",
+    imgUrl: images.nftApp,
     projectLink: "www.google.com",
     codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
-    tags: ["React js", "All"],
-  },
-  {
-    name: "web app",
-    title: "Social Media",
-    imgUrl: images.about04,
-    projectLink: "www.google.com",
-    codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
-    tags: ["React js", "All"],
-  },
-  {
-    name: "web app",
-    title: "ToDo App",
-    imgUrl: images.about04,
-    projectLink: "www.google.com",
-    codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
+    description: "profnef",
     tags: ["Mobile App", "All"],
   },
   {
-    name: "web app",
+    name: "Goal Setter",
+    title: "Goal Setter",
+    imgUrl: images.about04,
+    projectLink: "www.google.com",
+    codeLink: "www.github.com",
+    description: "Goalsetter",
+    tags: ["Mobile App", "All"],
+  },
+  {
+    name: "Calculator",
     title: "Calculator",
-    imgUrl: images.about04,
+    imgUrl: images.calcApp,
     projectLink: "www.google.com",
     codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
-    tags: ["Mobile App", "All"],
-  },
-  {
-    name: "web app",
-    title: "Keeper",
-    imgUrl: images.about04,
-    projectLink: "www.google.com",
-    codeLink: "www.github.com",
-    description: "Lorem ipsum dolor sit.",
+    description: "Calculator",
     tags: ["Mobile App", "All"],
   },
 ];
