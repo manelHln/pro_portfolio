@@ -169,7 +169,7 @@ const works = [
   {
     name: "Goal Setter",
     title: "Goal Setter",
-    imgUrl: images.about04,
+    imgUrl: images.goalSetter,
     projectLink: "www.google.com",
     codeLink: "www.github.com",
     description: "Goalsetter",
