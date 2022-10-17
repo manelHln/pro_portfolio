@@ -69,7 +69,10 @@
   }
 
   @media screen and (max-width: 450px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 1.6rem;
   }
 }
 
