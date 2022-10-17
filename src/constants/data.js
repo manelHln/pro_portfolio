@@ -152,7 +152,7 @@ const works = [
     name: "web app",
     title: "Nft Marketplace",
     imgUrl: images.nftMarketplace,
-    projectLink: "//www.google.com",
+    projectLink: "//manel-nftmarketplace.netlify.app",
     codeLink: "//github.com/manelHln/nft-marketplace",
     description: "nftMarket",
     tags: ["Web App", "All"],
